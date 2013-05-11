@@ -1,0 +1,15 @@
+{
+    "name": "cannibal/name-bundle",
+    "description": "Contains name entities for use on symfony 2 projects",
+    "license": "EPL",
+    "authors": [
+        {
+            "name": "cannibal",
+            "email": "cannibal234@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+
+    }
+}

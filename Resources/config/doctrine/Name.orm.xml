@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+    <entity repository-class="Cannibal\Bundle\NameBundle\Entity\NameRepository" name="Cannibal\Bundle\NameBundle\Entity\Name" table="cannibal_names">
+        <id name="id" type="integer" column="id">
+            <generator strategy="AUTO"/>
+        </id>
+        <field name="title" type="string" column="title" length="4"/>
+        <field name="given" type="string" column="given" length="128"/>
+        <field name="family" type="string" column="family" length="128"/>
+        <field name="honourific" type="string" column="honourific" length="20" nullable="true"/>
+        <field name="lineage" type="string" column="lineage" length="20" nullable="true"/>
+    </entity>
+</doctrine-mapping>
