@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<constraint-mapping xmlns="http://symfony.com/schema/dic/constraint-mapping"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="http://symfony.com/schema/dic/constraint-mapping http://symfony.com/schema/dic/constraint-mapping/constraint-mapping-1.0.xsd">
+
+<class name="Cannibal\Bundle\NameBundle\Entity\Name">
+    <property name="title">
+        <constraint name="Choice">
+            <option name="choices">
+                <value>Mr</value>
+                <value>Ms</value>
+                <value>Mrs</value>
+                <value>Dr</value>
+                <value>Rev</value>
+            </option>
+            <option name="message">Choose a valid title.</option>
+        </constraint>
+        <constraint name="NotBlank"/>
+    </property>
+
+    <property name="given">
+        <constraint name="NotBlank"/>
+    </property>
+
+    <property name="family">
+        <constraint name="NotBlank"/>
+    </property>
+</class>
+</constraint-mapping>
