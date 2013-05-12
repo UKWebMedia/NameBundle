@@ -36,6 +36,6 @@ class NameType extends AbstractType
 
     public function getDefaultOptions(array $options)
     {
-        return array('data_class' => 'Cannibal\\NameBundle\\Entity\\Name');
+        return array('data_class' => 'Cannibal\\Bundle\\NameBundle\\Entity\\Name');
     }
 }
