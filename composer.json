@@ -11,5 +11,9 @@
     "minimum-stability": "dev",
     "require": {
 
-    }
+    },
+    "autoload": {
+        "psr-0": { "Cannibal\\Bundle\\NameBundle": "" }
+    },
+    "target-dir": "Cannibal/Bundle/NameBundle"
 }
