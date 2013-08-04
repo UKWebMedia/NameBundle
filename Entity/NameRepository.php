@@ -1,6 +1,6 @@
 <?php
 
-namespace Generic\IdentityBundle\Entity;
+namespace Cannibal\Bundle\NameBundle\Entity;
 
 use Doctrine\ORM\EntityRepository;
 
