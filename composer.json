@@ -8,10 +8,6 @@
             "email": "cannibal234@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {
-
-    },
     "autoload": {
         "psr-0": { "Cannibal\\Bundle\\NameBundle": "" }
     },
