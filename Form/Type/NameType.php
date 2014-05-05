@@ -3,6 +3,7 @@ namespace Cannibal\Bundle\NameBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
 class NameType extends AbstractType
 {
@@ -34,8 +35,10 @@ class NameType extends AbstractType
         return "name";
     }
 
-    public function getDefaultOptions(array $options)
+    public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
-        return array('data_class' => 'Cannibal\\Bundle\\NameBundle\\Entity\\Name');
+        $resolver->setDefaults(array(
+            'data_class' => 'Cannibal\Bundle\NameBundle\Entity\Name'
+        ));
     }
 }
